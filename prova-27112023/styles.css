@@ -1,0 +1,96 @@
+body {
+    background: cadetblue;
+    font-family: 'Teko';
+}
+
+.tarefas-container {
+    width: 50%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarefas-title {
+    color: #fff;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    font-size: 38px;
+    color: #fff;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.line {
+    margin: 0 40px;
+    height: 1px;
+    background: #fff;
+}
+
+.nova-tarefa {
+    padding: 15px 40px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.lista-tarefa {
+    padding: 0 40px 15px 40px;
+    display: flex;
+}
+
+.lista-tarefa:hover .tarefa-adicionada, .lista-tarefa:hover .delBtn {
+    background: beige;
+}
+
+input, .tarefa-adicionada {
+    margin: 0;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+}  
+
+.tarefa-adicionada {
+    background: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.tarefa-concluida .tarefa-adicionada, .tarefa-concluida .delBtn {
+    background: beige;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+  
+.addBtn, .delBtn {
+    padding: 10px;
+    padding-top: 15px;
+    width: 5%;
+    background: #fff;
+    color: blue;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: larger;
+}
+
+.delBtn {
+    color: red !important;
+}
